@@ -1,0 +1,19 @@
+{
+  "name": "traveller_mate",
+  "version": "1.0.1",
+  "description": "",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node server --ignore client",
+    "develop": "concurrently \"cd backend && npm run start\" \"cd fontend && npm start\"",
+    "install": "cd backend && npm i && cd ../fontend && npm i",
+    "seed": "cd backend && npm run seed",
+    "build": "cd fontend && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
