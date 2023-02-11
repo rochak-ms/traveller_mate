@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
+body {
+  font-family: arial;
+}
+
+.fl-left {
+  float: left;
+}
+
+.fl-right {
+  float: right;
+}
+
+.cont {
+  width: 100%;
+  margin: 10px auto;
+}
+
+small {
+  font-size: 0.86rem;
+}
+
+h2.SV {
+  text-transform: uppercase;
+  font-weight: 900;
+  border-left: 10px solid #444442;
+  padding-left: 10px;
+  margin-bottom: 30px;
+}
+
+.row1 {
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border: 1px solid #44444234;
+  margin: auto;
+}
+
+.card1 {
+  display: table-row;
+  width: 60%;
+  background-color: #fff;
+  color: #989898;
+  margin-bottom: 10px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  border-radius: 4px;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.card1 + .card1 {
+  margin-left: 2%;
+}
+
+.date {
+  display: table-cell;
+  width: 25%;
+  position: relative;
+  text-align: center;
+  border-right: 2px dashed #dadde6;
+}
+
+.date:before,
+.date:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: grey;
+  position: absolute;
+  top: -8%;
+  right: -15%;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.date:after {
+  top: auto;
+  bottom: -15px;
+}
+
+.date time {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.date time span {
+  display: block;
+}
+
+.date time span:first-child {
+  color: #2b2b2b;
+  font-weight: 600;
+  font-size: 250%;
+}
+
+.date time span:last-child {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.card-cont {
+  display: table-cell;
+  width: 75%;
+  font-size: 85%;
+  padding: 10px 10px 30px 50px;
+}
+
+.card-cont h3 {
+  color: #3c3c3c;
+  font-size: 150%;
+}
+
+.row1:last-child .card1:last-of-type .card-cont h3 {
+  /* text-decoration: line-through */
+}
+
+.card-cont > div {
+  display: table-row;
+}
+
+.card-cont .even-date i,
+.card-cont .even-info i,
+.card-cont .even-date time,
+.card-cont .even-info p {
+  display: table-cell;
+}
+
+.card-cont .even-date i,
+.card-cont .even-info i {
+  padding: 5% 5% 0 0;
+}
+
+.card-cont .even-info p {
+  padding: 30px 50px 0 0;
+}
+
+.card-cont .even-date time span {
+  display: block;
+}
+
+.card-cont a {
+  display: block;
+  text-decoration: none;
+  width: 80px;
+  height: 30px;
+  background-color: #d8dde0;
+  color: #fff !important;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 2px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.row1:last-child .card1:first-child .card-cont a {
+  background-color: #037fdd;
+}
+
+.row1:last-child .card1:last-child .card-cont a {
+  background-color: #ff2c28;
+}
+
+@media screen and (max-width: 956px) {
+  .row1 {
+    width: 100%;
+  }
+  .card1 {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .card1 + .card1 {
+    margin-left: 0;
+  }
+
+  .card-cont .even-date,
+  .card-cont .even-info {
+    font-size: 75%;
+  }
+}

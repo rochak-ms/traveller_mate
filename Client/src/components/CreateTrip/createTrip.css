@@ -1,0 +1,16 @@
+.ad_trip {
+  position: absolute !important;
+  top: 5rem;
+}
+
+.formC {
+  justify-content: space-between !important;
+  align-items: stretch !important;
+}
+
+.createCont {
+  padding: 4.5rem !important;
+  height: 45rem !important;
+  max-height: calc(100vh - 210px);
+  overflow-y: auto;
+}

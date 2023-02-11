@@ -2,7 +2,7 @@ import React from "react";
 import Login from "./Login";
 import Signup from "./Signup";
 import "./landing.css";
-import { Link } from "react-scroll";
+import { Link } from "react-scroll/modules";
 import Video from "../../assets/hero.mov";
 
 const Landing = () => {
@@ -26,7 +26,7 @@ const Landing = () => {
         <Link to="search" smooth={true} duration={500}>
           <div className="lowBtn">
             <Login /> <strong>- OR -</strong> <Signup />
-          </div>{" "}
+          </div>
         </Link>
       </div>
     </>
